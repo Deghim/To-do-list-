@@ -4,42 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-<!-- Creacion de una lista de tareas con los siguientes requerimentos
-
-Agregar tareas
-mostrar las tareas agregadas en la interfaz
-Completar una tarea, mecanismo para ver que tareas ya estan en status terminado
-Poder Borrar una tarea, que desaparezca de la pantalla
-Utilizar un framework responsivo (como bootstrap,uikit, fundation,bulma,etc) en al menos un elemento (por ejemplo, en el boton de agregar se tomo el boton del framework ) -->
-<body   class="d-flex flex-column align-items-center">
-    <h1>TO-DO List</h1>
+<body class="d-flex flex-column align-items-center">
+    <h1 class="mt-5">TO-DO List</h1>
     <div class="d-flex flex-row mt-5">
         <input type="text" class="me-5" placeholder="Task">
         <button type="button" class="btn btn-secondary">Add Task</button>
     </div>
-    <table>
-        <caption>Deberes</caption>
-        <tr>
-          <th>Task #</th>
-          <th>Description</th>
-          <th>Options</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Aplicaciones Web homework</td>
-          <td>
-            <button type="button" class="btn btn-light">Done</button>
-            <button type="button" class="btn btn-warning">Delete</button>
+    <div class="mt-3 w-75">
+        <table class="table ">
+            <!-- <caption>Things to do</caption> -->
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Task</th>
+                    <th scope="col"></th>
+                    <th scope="col">Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Aplicaciones Web homework</td>
+                    <td>
+                        <button type="button" class="btn btn-light">Done</button>
+                        <button type="button" class="btn btn-warning">Delete</button>
+                    </td>
+                    <td>
+                        <input type="text" class="form-control" placeholder="Comments">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        <!--  -->
+    <div class="mt-3 w-75">
 
-          </td>
-        </tr>
+        <table class="table ">
+            <!-- <caption>Things to do</caption> -->
+            <thead class="table-light">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Task</th>
+                    <th scope="col"> Completed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Aplicaciones Web homework</td>
+                    <td>28 Jun</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
         
-      </table>
-   
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>
