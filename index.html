@@ -9,12 +9,37 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
+<!-- Creacion de una lista de tareas con los siguientes requerimentos
+
+Agregar tareas
+mostrar las tareas agregadas en la interfaz
+Completar una tarea, mecanismo para ver que tareas ya estan en status terminado
+Poder Borrar una tarea, que desaparezca de la pantalla
+Utilizar un framework responsivo (como bootstrap,uikit, fundation,bulma,etc) en al menos un elemento (por ejemplo, en el boton de agregar se tomo el boton del framework ) -->
 <body   class="d-flex flex-column align-items-center">
-    <h1>TO DO</h1>
+    <h1>TO-DO List</h1>
     <div class="d-flex flex-row mt-5">
-        <input type="text" class="me-5" placeholder="tarea">
-        <button type="button" class="btn btn-primary">Agregar Tarea</button>
+        <input type="text" class="me-5" placeholder="Task">
+        <button type="button" class="btn btn-secondary">Add Task</button>
     </div>
-    
+    <table>
+        <caption>Deberes</caption>
+        <tr>
+          <th>Task #</th>
+          <th>Description</th>
+          <th>Options</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Aplicaciones Web homework</td>
+          <td>
+            <button type="button" class="btn btn-light">Done</button>
+            <button type="button" class="btn btn-warning">Delete</button>
+
+          </td>
+        </tr>
+        
+      </table>
+   
 </body>
 </html>
