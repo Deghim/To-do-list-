@@ -12,7 +12,6 @@
     <div class="d-flex flex-row mt-5">
         <input type="text" class="me-5" placeholder="Task" id="taskText">
         <button type="button" class="btn btn-secondary" onclick="oscartots()">Add Task</button>
-        <button type="button" class="btn btn-secondary" onclick="myDeleteFunction()">borrar</button>
     </div>
     <div class="mt-3 w-75">
         <table class="table" id="tableTask">
@@ -26,24 +25,14 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Aplicaciones Web homework</td>
-                    <td>
-                        <button type="button" class="btn btn-light">Done</button>
-                        <button type="button" class="btn btn-warning">Delete</button>
-                    </td>
-                    <td>
-                        <input type="text" class="form-control" placeholder="Comments">
-                    </td>
-                </tr>
+       
             </tbody>
         </table>
     </div>
         <!--  -->
     <div class="mt-3 w-75">
 
-        <table class="table ">
+        <table class="table " id="tableCompleted">
             <!-- <caption>Things to do</caption> -->
             <thead class="table-light">
                 <tr>
@@ -54,9 +43,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Aplicaciones Web homework</td>
-                    <td>28 Jun</td>
+
                 </tr>
             </tbody>
         </table>
